@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 1000px; }
+
+.header {
+  display: flex;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=style.css.map */
