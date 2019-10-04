@@ -4,18 +4,111 @@
 <head>
     <meta charset="utf-8">
     <title>Car insurance</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+    </style>
 </head>
 
 <body>
-<header id="header">
-	<div class="header">
-		<div><img src="./img/logo.png" alt="Logo"></div>
-		<div><img src="./img/banner.png" alt="Banner"></div>
-	</div>
-</header><!-- /header -->
-    <img src="/img/img.jpg" alt="">
-    <script src="/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+    <header id="header">
+        <div class="header">
+            <div><img src="./img/logo.png" alt="Logo"></div>
+            <div><img id="banner" src="./img/banner.png" alt="Banner"></div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="team.html">
+                <li>Team</li>
+            </a>
+        </ul>
+    </nav>
+    <br>
+    <div class="mainbody">
+        <img src="./img/traffic-332857_1920.jpg" alt="">
+        <h2>Car insurance</h2>
+        <div class="opacInput">
+            <h1>Great coverage begins <br>with a costum quote</h1>
+            <div class="input">
+                <div class="ipart">Your name:
+                    <br>
+                    <input id="name" type="text" name="">
+                </div>
+                <div class="ipart">Age:
+                    <br>
+                    <input id="age" type="number" name="">
+                </div>
+                <div class="ipart">Country:
+                    <br>
+                    <select id="land" name="country">
+                        <option value="austria" selected>Austria</option>
+                        <option value="hungary">Hungary</option>
+                        <option value="greece">Greece</option>
+                    </select>
+                </div>
+                <div class="ipart">Horsepower of your car:
+                    <br>
+                    <input id="hp" type="number" name="">
+                </div>
+            </div>
+            <button type="button" onclick="calculateInsurance()">Calculate</button>
+            <p id="placeholder">Printed calculation goes here</p>
+        </div>
+        <div class="downerPart">
+            <h3 class="slogan h3">Un-complicating car coverage</h3>
+            <p class="slogan p">Understanding your coverage options shouldn't be so hard.</p>
+            <p class="slogan p">We'll guide you through available coverage types,<br> starting with who and what is covered</p>
+        </div>
+    </div>
+    <div class="bottomColumns">
+        <div class="column">
+            <h4>What comes standard</h4>
+            <p class="pad">The coverage you need</p>
+            <p>
+                <span class="tick">&#10004;</span> Bodily Injury Liability
+                <br>
+                <span class="tick">&#10004;</span> Property Damage
+                <br>
+                <span class="tick">&#10004;</span> Medical Payments
+            </p>
+            <br>
+            <p><b>Benefits</b></p>
+            <p class="lighter">12-month rate guarantee|24/7 customer service|Lifetime Repair Guarantee</p>
+        </div>
+        <div class="column">
+            <h4>Add-on protection & coverage</h4>
+            <p class="pad">Fore more peace of mind</p>
+            <p>
+                <span class="tick">&#10004;</span> Better Car Replacement
+                <br>
+                <span class="tick">&#10004;</span> Towing & Labor
+                <br>
+                <span class="tick">&#10004;</span> Rental Car Coverage
+            </p>
+            <br>
+            <p><b>Earned Benefits</b></p>
+            <p class="lighter">Accident Forgieness'|New Car <br>Replacement &trade;</p>
+        </div>
+    </div>
+    <footer>
+        <div class="bottom">
+            <ul class="navbar">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="team.html">
+                    <li>Team</li>
+                </a>
+            </ul>
+            <img src=".\img\logo-inv.png" alt="Logo">
+            <p>Barbara Anissin - CodeFactory 2018</p>
+        </div>
+    </footer>
+    <script src="./js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 
 </html>
